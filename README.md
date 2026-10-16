@@ -1,5 +1,10 @@
 # tailwind-turbopack-stale-css
 
+> [!NOTE]
+> **Fixed.** This bug was reported in [tailwindlabs/tailwindcss#20581](https://github.com/tailwindlabs/tailwindcss/issues/20581), and a fix was proposed in [#20583](https://github.com/tailwindlabs/tailwindcss/pull/20583). It was fixed in [#20582](https://github.com/tailwindlabs/tailwindcss/pull/20582).
+
+---
+
 A minimal reproduction of a bug in `@tailwindcss/turbopack`: when you edit a CSS file during `next dev`, the dev server keeps serving the previous version of that CSS. Only restarting the dev server fixes it.
 
 The project was generated with `create-next-app@16.4.0` (Tailwind enabled, default Turbopack bundler). `src/app/page.tsx` was reduced to a single element. The Tailwind setup is what `create-next-app` generates:
